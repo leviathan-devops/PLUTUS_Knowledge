@@ -36,3 +36,20 @@ Built 2026-09-16 from manager-machine boilerplate v1.0 (battery 37/0 green at co
 - daemon killed → tick observed `daemon-down` → healed → read-back `ready=true`
 - crash-first row `kgm-proof-001` (NULL terminal) → next run resumed `checkpoint=start`
 - lint RAISED while daemon down (correct: surfaced, never auto-edited)
+
+## TOPOLOGY v2 (2026-09-16, after operator order: graph = MASTER_CONTEXT only)
+
+- **THE GRAPH:** `Shared_Workspace/PLUTUS/MASTER_CONTEXT` (41 corpus files + engine
+  scaffolding: .arsumbris/{repo,workspace}.yaml · type/plutus-doc.type.yaml · README).
+  The old hand-authored PLUTUS_Knowledge cards are NOT in the graph (repo kept as history).
+- **Engine daemon:** this repo (kgm fleet REPO repointed; heal proven on it).
+- **au-mcp kernel:** hub service `plutus-aumcp` (persistent) — node au-mcp/src/cli.ts
+  start <corpus>. Socket ~/.arsumbris/au-mcp/run/<hash>.sock. 44 tools served
+  (au-mcp-core mounted as workspace discover-member).
+- **OMP binding:** ~/.omp/agent/mcp.json entry `plutus-au` →
+  au-mcp-adapter-cc/bin/omp-server.ts (mints a governed session, execs the MCP shim).
+  New OMP sessions load it at startup.
+- **Reboot recovery (not boot-persistent):**
+    1. bun kgm/fleet.ts tick          # heals the engine daemon (read-back)
+    2. au-mcp: node ~/arsumbris/au-mcp/src/cli.ts start <corpus>   # or re-register the hub service
+- **UI:** au-host BUILT — `cd ~/arsumbris/au-host && pnpm dev` (operator launches).
