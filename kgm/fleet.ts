@@ -27,7 +27,7 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 import { Database } from "bun:sqlite";
 const AU = "/home/leviathan/arsumbris/au-engine/target/release/au";
-const REPO = "/home/leviathan/JARVIS_WORKSPACE/PLUTUS_Knowledge";
+const REPO = "/home/leviathan/JARVIS_WORKSPACE/Shared_Workspace/PLUTUS/MASTER_CONTEXT";
 const DB = process.env.MM_DB ?? join(homedir(), ".manager-machine/plutus-knowledge/store.sqlite");
 const IDENTITY = "plutus-knowledge";
 const JOURNAL = join(import.meta.dir, "journal", "journal.log");
