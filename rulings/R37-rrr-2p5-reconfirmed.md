@@ -12,4 +12,4 @@ status: "operator-confirmed"
 
 > i said before 2.5 is an acceptable minimum
 
-Re-confirms [[R09]]. The 2026-09-16 GATE-CLASS refusal 'DXY-S RRR 2.60 < 3.0' was doctrine-noncompliant: under the ratified 2.5 floor the trade emits. Kill every 3.0 floor in emission paths (e.g. stale sites in src/constants + the W9 anchor-decision path).
+Re-confirms [[R09-rrr-floor-2p5]]. The 2026-09-16 GATE-CLASS refusal 'DXY-S RRR 2.60 < 3.0' was doctrine-noncompliant: under the ratified 2.5 floor the trade emits. Kill every 3.0 floor in emission paths (e.g. stale sites in src/constants + the W9 anchor-decision path).

@@ -1,2 +1,2 @@
-name: plutus-knowledge
-# local-only v1; add a GitHub remote when the operator wants to share
+type: au.engine.repo::au-engine
+name: PLUTUS_Knowledge

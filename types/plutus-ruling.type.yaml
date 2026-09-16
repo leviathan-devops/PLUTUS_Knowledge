@@ -1,5 +1,0 @@
-fields:
-  id: 'String{<^R[0-9]{1,2}$>}'
-  quote: String
-  source: 'String{<^[A-Za-z0-9_./ -]+:[0-9]+$>}'
-  status: [active, superseded, operator-confirmed, ratified]
